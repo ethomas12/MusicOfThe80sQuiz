@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">80s Music Quiz</string>
+
+    <string name="quizDescription">Test your knowledge of music made in the 1980s</string>
+
+    <string name="aesthetic">4K Aesthetic Wallpaper Dragonzebra</string>
+
+
+    <!--Questions-->
+
+    <string name="quiz_1">What other two bands did the members of Love and Rockets play with?</string>
+
+    <string name="quiz_1_a">Tones on Tail</string>
+    <string name="quiz_1_b">Sisters of Mercy</string>
+    <string name="quiz_1_c">Bauhaus</string>
+    <string name="quiz_1_d">The Damned</string>
+    <string name="quiz_1_e">The Mission UK</string>
+
+    <!--...-->
+
+    <string name="quiz_3">True or False: Biz Markie\'s nickname was the \"Clown Prince of Hip Hop\"?</string>
+
+    <!--...-->
+
+    <string name="quiz_2">Which songs were hits for The GoGos?</string>
+
+    <string name="quiz_2_a">Vacation</string>
+    <string name="quiz_2_b">In Your Room</string>
+    <string name="quiz_2_c">Head Over Heels</string>
+    <string name="quiz_2_d">Eternal Flame</string>
+    <string name="quiz_2_e">Our Lips Are Sealed</string>
+
+    <!--...-->
+
+    <string name="quiz_4">What are the last four words of this lyric from Billy Ocean\'s \"Caribbean Queen\"?</string>
+    <string name="your_answer_4">\"Caribbean Queen, now we\'re sharing the same dream, and our hearts they beat as one, no more  ____ __ ___ ___\"</string>
+
+    <!--...-->
+
+    <string name="quiz_5">Who lives in Tennessee because all his exes live in Texas?</string>
+
+    <string name="ab_choice">George Jones</string>
+    <string name="ba_choice">George Strait</string>
+
+    <!--...-->
+
+    <string name="quiz_6">Who were the members of the supergroup LSG?</string>
+
+    <string name="quiz_6_a">Scott</string>
+    <string name="quiz_6_b">Levert</string>
+    <string name="quiz_6_c">Gerard</string>
+    <string name="quiz_6_d">Sweat</string>
+    <string name="quiz_6_e">Gill</string>
+
+    <!--...-->
+
+    <string name="quiz_7">\"Come On Eileen\" was a huge hit for Men At Work.</string>
+
+    <!--...-->
+
+    <string name="quiz_8">What are the first four words to Suzanne Vega\'s biggest hit song?</string>
+    <string name="your_answer_8">\"__ ____ __ ____ , I live on the second floor, I live upstairs from you, yes I think you\'ve seen me before\"</string>
+
+
+    <!--Answers-->
+
+    <string name="fact_1">Daniel Ash, Kevin Haskins, and David J had all been members of Bauhaus</string>
+
+    <string name="fact_2">The GoGos had hits with \"Our Lips Are Sealed\", \"Head Over Heals\", and \"Vacation\".  The Bangles sang \"In Your Room\" and \"Eternal Flame\"</string>
+
+    <string name="fact_3">True. The rapper, beatboxer, singer and DJ is also a comedian</string>
+
+    <string name="fact_4">.. no more love on the run </string>
+
+    <string name="fact_5">George Strait sang the hit country song \"All My Exes Live in Texas\"</string>
+
+    <string name="fact_6">Eddie Levert, Keith Sweat, and Johnny Gill made up LSG</string>
+
+    <string name="fact_7">\"Come On Eileen\" was a #1 hit for Dexys Midnight Runners</string>
+
+    <string name="fact_8">My name is Luka..</string>
+
+
+    <!--Other text-->
+
+    <string name="checkbox_hint">Check all that are correct</string>
+    <string name="true_choice">True</string>
+    <string name="false_choice">False</string>
+    <string name="btn_text_check">See the answer</string>
+    <string name="btn_text_1">Score</string>
+
+</resources>
+
+
+    <!--Image descriptions-->
+    <!--<string name="na_img">North America</string>-->
+
+    <!--<string name="au_img">Australia</string>-->
+
+    <!--<string name="eu_img">Europe</string>-->
+
+    <!--<string name="an_img">Antarctica</string>-->
+
