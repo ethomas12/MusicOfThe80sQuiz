@@ -104,8 +104,8 @@
 
                 <Button
                     android:id="@+id/check_1_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn1" -->
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn1"/>
 
                 <TextView
                     android:id="@+id/answer_1"
@@ -114,10 +114,10 @@
                     android:layout_height="wrap_content"
                     android:text="" />
 
-                <!--************************* Question 3 ************************ -->
+                <!--************************* Question 2 ************************ -->
                 <TextView
                     style="@style/QuestionText"
-                    android:text="@string/quiz_3" />
+                    android:text="@string/quiz_2" />
 
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -144,21 +144,21 @@
                 </RadioGroup>
 
                 <Button
-                    android:id="@+id/check_3_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn3" -->
+                    android:id="@+id/check_2_button"
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn2"/>
 
                 <TextView
-                    android:id="@+id/answer_3"
+                    android:id="@+id/answer_2"
                     style="@style/AccentText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="" />
 
-                <!--************************* Question 2 ************************ -->
+                <!--************************* Question 3 ************************ -->
                 <TextView
                     style="@style/QuestionText"
-                    android:text="@string/quiz_2" />
+                    android:text="@string/quiz_3" />
 
                 <TextView
                     style="@style/AnswerText"
@@ -168,52 +168,52 @@
                     android:text="@string/checkbox_hint" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_2_a"
+                    android:id="@+id/checkbox_3_a"
                     style="@style/ChoiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_2_a" />
+                    android:text="@string/quiz_3_a" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_2_b"
+                    android:id="@+id/checkbox_3_b"
                     style="@style/ChoiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_2_b" />
+                    android:text="@string/quiz_3_b" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_2_c"
+                    android:id="@+id/checkbox_3_c"
                     style="@style/ChoiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_2_c" />
+                    android:text="@string/quiz_3_c" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_2_d"
+                    android:id="@+id/checkbox_3_d"
                     style="@style/ChoiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_2_d" />
+                    android:text="@string/quiz_3_d" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_2_e"
+                    android:id="@+id/checkbox_3_e"
                     style="@style/ChoiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_2_e" />
+                    android:text="@string/quiz_3_e" />
 
                 <Button
-                    android:id="@+id/check_2_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn2" -->
+                    android:id="@+id/check_3_button"
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn3"/>
 
                 <TextView
-                    android:id="@+id/answer_2"
+                    android:id="@+id/answer_3"
                     style="@style/AccentText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -242,9 +242,8 @@
 
                 <Button
                     android:id="@+id/check_4_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn4" -->
-
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn4" />
 
                 <TextView
                     android:id="@+id/answer_4"
@@ -271,8 +270,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ab_choice"
                         android:textAppearance="?android:textAppearanceMedium" />
-                    <!--android:onClick="checkBtn5"-->
-
 
                     <RadioButton
                         android:id="@+id/babies_adults_radio_button"
@@ -281,14 +278,14 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ba_choice"
                         android:textAppearance="?android:textAppearanceMedium" />
-                    <!--android:onClick="checkBtn5"-->
 
                 </RadioGroup>
 
                 <Button
                     android:id="@+id/check_5_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn5"-->
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn5"/>
+                <!---->
 
                 <TextView
                     android:id="@+id/answer_5"
@@ -355,8 +352,9 @@
 
                 <Button
                     android:id="@+id/check_6_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn6"-->
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn6"/>
+                <!---->
 
                 <TextView
                     android:id="@+id/answer_6"
@@ -383,7 +381,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/true_choice"
                         android:textAppearance="?android:textAppearanceMedium" />
-                    <!--android:onClick="checkBtn5"-->
 
 
                     <RadioButton
@@ -393,14 +390,14 @@
                         android:layout_height="wrap_content"
                         android:text="@string/false_choice"
                         android:textAppearance="?android:textAppearanceMedium" />
-                    <!--android:onClick="checkBtn5"-->
 
                 </RadioGroup>
 
                 <Button
                     android:id="@+id/check_7_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn5"-->
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn7"/>
+                <!---->
 
                 <TextView
                     android:id="@+id/answer_7"
@@ -421,19 +418,19 @@
 
                 <EditText
                     android:id="@+id/quiz_8_editable"
-                    android:backgroundTint="@color/questionText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/questionText"
                     android:inputType="textMultiLine"
                     android:textColor="@color/colorAccent" />
 
                 <Button
                     android:id="@+id/check_8_button"
-                    style="@style/checkButtons" />
-                <!--android:onClick="checkBtn4" -->
+                    style="@style/checkButtons"
+                    android:onClick="checkBtn8"/>
 
 
                 <TextView
@@ -446,15 +443,31 @@
 
                 <!--End of Quiz Questions-->
 
-                <Button
-                    android:id="@+id/submit_score_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="@string/btn_text_1" />
-                <!--android:onClick="submitScore"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
+    <Button
+        android:id="@+id/submit_score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="@string/btn_text_1"
+        android:onClick="submitScore"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/reset_score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="@string/reset"
+        android:onClick="resetScore"/>
+
+</LinearLayout>
 
                 <TextView
                     android:id="@+id/final_score_message"

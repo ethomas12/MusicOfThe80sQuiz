@@ -18,17 +18,17 @@
 
     <!--...-->
 
-    <string name="quiz_3">True or False: Biz Markie\'s nickname was the \"Clown Prince of Hip Hop\"?</string>
+    <string name="quiz_2">True or False: Biz Markie\'s nickname was the \"Clown Prince of Hip Hop\"?</string>
 
     <!--...-->
 
-    <string name="quiz_2">Which songs were hits for The GoGos?</string>
+    <string name="quiz_3">Which songs were hits for The GoGos?</string>
 
-    <string name="quiz_2_a">Vacation</string>
-    <string name="quiz_2_b">In Your Room</string>
-    <string name="quiz_2_c">Head Over Heels</string>
-    <string name="quiz_2_d">Eternal Flame</string>
-    <string name="quiz_2_e">Our Lips Are Sealed</string>
+    <string name="quiz_3_a">Vacation</string>
+    <string name="quiz_3_b">In Your Room</string>
+    <string name="quiz_3_c">Head Over Heels</string>
+    <string name="quiz_3_d">Eternal Flame</string>
+    <string name="quiz_3_e">Our Lips Are Sealed</string>
 
     <!--...-->
 
@@ -64,19 +64,19 @@
 
     <!--Answers-->
 
-    <string name="fact_1">Daniel Ash, Kevin Haskins, and David J had all been members of Bauhaus</string>
+    <string name="fact_1">Daniel Ash, Kevin Haskins, and David J had all been members of Bauhaus and later Tones on Tail.</string>
 
-    <string name="fact_2">The GoGos had hits with \"Our Lips Are Sealed\", \"Head Over Heals\", and \"Vacation\".  The Bangles sang \"In Your Room\" and \"Eternal Flame\"</string>
+    <string name="fact_2">True. The rapper, beatboxer, singer and DJ is also a comedian.</string>
 
-    <string name="fact_3">True. The rapper, beatboxer, singer and DJ is also a comedian</string>
+    <string name="fact_3">The GoGos had hits with \"Our Lips Are Sealed\", \"Head Over Heals\", and \"Vacation\".  \"In Your Room\" and \"Eternal Flame\" were sung by The Bangles.</string>
 
-    <string name="fact_4">.. no more love on the run </string>
+    <string name="fact_4">.. love on the run </string>
 
-    <string name="fact_5">George Strait sang the hit country song \"All My Exes Live in Texas\"</string>
+    <string name="fact_5">George Strait sang the hit country song \"All My Exes Live in Texas\".</string>
 
-    <string name="fact_6">Eddie Levert, Keith Sweat, and Johnny Gill made up LSG</string>
+    <string name="fact_6">Eddie Levert, Keith Sweat, and Johnny Gill made up LSG.</string>
 
-    <string name="fact_7">\"Come On Eileen\" was a #1 hit for Dexys Midnight Runners</string>
+    <string name="fact_7">\"Come On Eileen\" was a #1 hit for Dexys Midnight Runners.</string>
 
     <string name="fact_8">My name is Luka..</string>
 
@@ -88,6 +88,8 @@
     <string name="false_choice">False</string>
     <string name="btn_text_check">See the answer</string>
     <string name="btn_text_1">Score</string>
+    <string name="reset">Try Again</string>
+
 
 </resources>
 
