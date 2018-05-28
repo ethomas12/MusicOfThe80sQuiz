@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             sumFalse += 1;
             //whoops toast
-            Toast.makeText(getApplicationContext(), "not quite..",
+            Toast.makeText(getApplicationContext(), "Uh, not quite..",
                     Toast.LENGTH_SHORT).show();
         }
 
