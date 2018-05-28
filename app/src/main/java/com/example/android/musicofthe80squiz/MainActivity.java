@@ -4,8 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewParent;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
 
-        TextView answer4TextView = findViewById(R.id.answer_4);
-        answer4TextView.setText(R.string.fact_4);
+//        TextView answer4TextView = findViewById(R.id.answer_4);
+//        answer4TextView.setText(R.string.fact_4);
 
     }
 
@@ -66,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
 
-        TextView answer8TextView = findViewById(R.id.answer_8);
-        answer8TextView.setText(R.string.fact_8);
+//        TextView answer8TextView = findViewById(R.id.answer_8);
+//        answer8TextView.setText(R.string.fact_8);
 
     }
 
@@ -189,53 +191,34 @@ public class MainActivity extends AppCompatActivity {
 
     // ************ Check Answers ************* //
 
-    //  Question 1
-    public void checkBtn1(View view) {
+    public void showAnswers (View view) {
+
+        ScrollView scrollToTop = findViewById(R.id.scrollView);
+        scrollToTop.setScrollY(0);
+
         TextView answer1TextView = findViewById(R.id.answer_1);
         answer1TextView.setText(R.string.fact_1);
-    }
 
-    //  Question 2
-    public void checkBtn2(View view) {
         TextView answer2TextView = findViewById(R.id.answer_2);
         answer2TextView.setText(R.string.fact_2);
-    }
 
-    //  Question 3
-    public void checkBtn3(View view) {
         TextView answer3TextView = findViewById(R.id.answer_3);
         answer3TextView.setText(R.string.fact_3);
-    }
-//
-//    // Question 4
-//    public void checkBtn4(View view) {
-//        TextView answer4TextView = findViewById(R.id.answer_4);
-//        answer4TextView.setText(R.string.fact_4);
-//    }
 
-    // Question 5
-    public void checkBtn5(View view) {
+        TextView answer4TextView = findViewById(R.id.answer_4);
+        answer4TextView.setText(R.string.fact_4);
+
         TextView answer5TextView = findViewById(R.id.answer_5);
         answer5TextView.setText(R.string.fact_5);
-    }
 
-    //  Question 6
-    public void checkBtn6(View view) {
         TextView answer6TextView = findViewById(R.id.answer_6);
         answer6TextView.setText(R.string.fact_6);
-    }
 
-    // Question 7
-    public void checkBtn7(View view) {
         TextView answer7TextView = findViewById(R.id.answer_7);
         answer7TextView.setText(R.string.fact_7);
-    }
 
-    /**
-     * This method resets the quiz by making sumFalse = 0
-     */
-    public void resetScore (View view) {
-        sumFalse = 0;
+        TextView answer8TextView = findViewById(R.id.answer_8);
+        answer8TextView.setText(R.string.fact_8);
 
     }
 
