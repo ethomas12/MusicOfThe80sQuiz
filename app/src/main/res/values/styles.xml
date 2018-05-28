@@ -8,57 +8,61 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="QuizImages">
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:scaleType">centerCrop</item>
-        <item name="android:padding">8dp</item>
-        <item name="android:layout_margin">8dp</item>
+    <!--<style name="QuizImages">-->
+        <!--<item name="android:layout_width">150dp</item>-->
+        <!--<item name="android:layout_height">100dp</item>-->
+        <!--<item name="android:scaleType">centerCrop</item>-->
+        <!--<item name="android:padding">8dp</item>-->
+        <!--<item name="android:layout_margin">8dp</item>-->
 
-    </style>
+    <!--</style>-->
 
     <style name="QuestionText">
         <item name="android:textColor">@color/questionText</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">32sp</item>
         <item name="android:padding">8dp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">8dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif-monospace</item>
 
     </style>
 
     <style name="ChoiceText">
         <item name="android:textColor">@color/questionText</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:padding">8dp</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">8dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:buttonTint">@color/questionText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+
+
+    </style>
+
+
+    <style name="PromptText">
+        <item name="android:textColor">@color/hintText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif-monospace</item>
 
     </style>
 
 
     <style name="AnswerText">
-        <item name="android:textColor">@color/questionText</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:padding">8dp</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginBottom">24dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-
-    </style>
-
-
-    <style name="AccentText">
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:padding">8dp</item>
         <item name="android:textStyle">italic</item>
         <item name="android:gravity">center</item>
@@ -66,10 +70,12 @@
         <item name="android:layout_marginBottom">24dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif-monospace</item>
+
 
     </style>
 
-    <style name="checkButtons">
+    <style name="CheckButtons">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/btn_text_check</item>
@@ -77,6 +83,8 @@
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">serif-monospace</item>
+
 
     </style>
 
@@ -96,6 +104,8 @@
         <item name="android:textColorHighlight">@color/colorQuestions</item>
         <item name="android:hint">@string/typed_hint</item>
         <item name="android:textColorHint">@color/hintText</item>
+        <item name="android:fontFamily">serif-monospace</item>
+
     </style>
 
 </resources>

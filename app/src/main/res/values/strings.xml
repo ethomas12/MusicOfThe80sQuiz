@@ -89,7 +89,7 @@
     <string name="false_choice">False</string>
     <string name="btn_text_check">Submit</string>
     <string name="btn_text_1">Score</string>
-    <string name="reset">See Answers</string>
+    <string name="showAnswers">See Answers</string>
 
 
 </resources>

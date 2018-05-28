@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewParent;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
@@ -41,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
 
-//        TextView answer4TextView = findViewById(R.id.answer_4);
-//        answer4TextView.setText(R.string.fact_4);
-
     }
 
     public void checkBtn8 (View v) {
@@ -63,13 +59,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             sumFalse += 1;
             //whoops toast
-            Toast toast = Toast.makeText(this, "not quite..", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Uh, not quite..", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
             toast.show();
         }
-
-//        TextView answer8TextView = findViewById(R.id.answer_8);
-//        answer8TextView.setText(R.string.fact_8);
 
     }
 
