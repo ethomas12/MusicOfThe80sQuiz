@@ -8,9 +8,9 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,9 +37,9 @@
                     android:layout_alignRight="@id/aesthetic_background"
                     android:layout_alignTop="@id/aesthetic_background"
                     android:layout_marginTop="0dp"
+                    android:fontFamily="monospace"
                     android:text="@string/app_name"
-                    android:textSize="36sp"
-                    android:fontFamily="monospace"/>
+                    android:textSize="36sp" />
             </RelativeLayout>
 
             <!--Quiz questions-->
@@ -51,6 +51,11 @@
                 android:orientation="vertical">
 
                 <!--************************* Question 1 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bauhaus" />
 
                 <TextView
                     style="@style/QuestionText"
@@ -111,6 +116,12 @@
                     android:text="" />
 
                 <!--************************* Question 2 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/scratching" />
+
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_2" />
@@ -147,6 +158,11 @@
                     android:text="" />
 
                 <!--************************* Question 3 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vintage_1950s" />
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_3" />
@@ -207,6 +223,12 @@
                     android:text="" />
 
                 <!--************************* Question 4 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/carribean" />
+
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_4" />
@@ -233,6 +255,12 @@
                     android:text="" />
 
                 <!--************************* Question 5 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cowboy_hats" />
+
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_5" />
@@ -269,6 +297,12 @@
                     android:text="" />
 
                 <!--************************* Question 6 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/records" />
+
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_6" />
@@ -332,6 +366,12 @@
                     android:text="" />
 
                 <!--************************* Question 7 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/men_working" />
+
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_7" />
@@ -369,6 +409,11 @@
                     android:text="" />
 
                 <!--************************* Question 8 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sad_boy" />
                 <TextView
                     style="@style/QuestionText"
                     android:text="@string/quiz_8" />
@@ -395,38 +440,154 @@
                     android:layout_height="wrap_content"
                     android:text="" />
 
+                <!--************************* Question 9 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/herbie_hancock" />
+
+                <TextView
+                    style="@style/QuestionText"
+                    android:text="@string/quiz_9" />
+
+                <TextView
+                    style="@style/PromptText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkbox_hint" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_9_a"
+                    style="@style/ChoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/quiz_9_a"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_9_b"
+                    style="@style/ChoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/quiz_9_b"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_9_c"
+                    style="@style/ChoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/quiz_9_c"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_9_d"
+                    style="@style/ChoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/quiz_9_d"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_9_e"
+                    style="@style/ChoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/quiz_9_e"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/answer_9"
+                    style="@style/AnswerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <!--************************* Question 10 ************************ -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sugar_cube" />
+
+                <TextView
+                    style="@style/QuestionText"
+                    android:text="@string/quiz_10" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_10a"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/true_choice"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_button_10b"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/false_choice"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answer_10"
+                    style="@style/AnswerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
 
                 <!--End of Quiz Questions-->
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <Button
                         android:id="@+id/submit_score_button"
+                        style="@style/CheckButtons"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
                         android:layout_gravity="center"
-                        android:gravity="center"
-                        android:onClick="submitScore"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:gravity="center"
+                        android:onClick="submitScore"
                         android:padding="8dp"
                         android:text="@string/btn_text_1"
-                        android:layout_alignParentLeft="true"
-                        style="@style/CheckButtons" />
+                        android:textColor="@color/questionText" />
 
                     <Button
+                        style="@style/CheckButtons"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:padding="8dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:text="@string/showAnswers"
-                        android:onClick="showAnswers"
                         android:layout_alignParentRight="true"
-                        style="@style/CheckButtons" />
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:onClick="showAnswers"
+                        android:padding="8dp"
+                        android:text="@string/showAnswers"
+                        android:textColor="@color/questionText" />
 
                 </RelativeLayout>
 

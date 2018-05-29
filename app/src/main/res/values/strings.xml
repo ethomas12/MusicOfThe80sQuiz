@@ -58,9 +58,22 @@
 
     <!--...-->
 
-    <string name="quiz_8">What are the first four words to Suzanne Vega\'s biggest hit song?</string>
+    <string name="quiz_8">What are the first four words to Suzanne Vega\'s first hit song?</string>
     <string name="your_answer_8">\"__ ____ __ ____ , I live on the second floor, I live upstairs from you, yes I think you\'ve seen me before\"</string>
 
+    <!--...-->
+
+    <string name="quiz_9">Herbie Hancock went to #1 with what song? </string>
+
+    <string name="quiz_9_a">Rocket Steady</string>
+    <string name="quiz_9_b">Jam On It</string>
+    <string name="quiz_9_c">Freakazoid</string>
+    <string name="quiz_9_d">Rockit</string>
+    <string name="quiz_9_e">Super Freak</string>
+
+    <!--...-->
+
+    <string name="quiz_10">Singer Bjork performed with 10,000 Maniacs before she went solo.</string>
 
     <!--Answers-->
 
@@ -79,6 +92,10 @@
     <string name="fact_7">\"Come On Eileen\" was a #1 hit for Dexys Midnight Runners.</string>
 
     <string name="fact_8">My name is Luka..</string>
+
+    <string name="fact_9">\"Rockit\" from his album \"Future Shock\"</string>
+
+    <string name="fact_10">False. She was the lead singer of the Sugarcubes </string>
 
 
     <!--Other text-->
