@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void checkBtn4 (View v) {
+    public void checkBtn4(View v) {
 
         // ************ Question 4 ************* //
         TextView typed_answer_4 = findViewById(R.id.quiz_4_editable);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void checkBtn8 (View v) {
+    public void checkBtn8(View v) {
 
         // ************ Question 8 ************* //
         TextView typed_answer_8 = findViewById(R.id.quiz_8_editable);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         if (your_answer_8.equalsIgnoreCase("my name is Luka")) {
             //Make the toast a variable so we can make changes to it
             //happy toast!
-            Toast toast  = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
             toast.show();
 
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        public int submitScore (View view) {
+    public int submitScore(View view) {
 
         // ************ Question 1 ************* //
         CheckBox checkbox1a = findViewById(R.id.checkbox_1_a);
@@ -170,6 +170,39 @@ public class MainActivity extends AppCompatActivity {
             sumFalse += 1;
         }
 
+        // ************ Question 9 ************* //
+        RadioButton checkbox9a = findViewById(R.id.checkbox_9_a);
+        boolean is9a = checkbox9a.isChecked();
+
+        RadioButton checkBox9b = findViewById(R.id.checkbox_9_b);
+        boolean is9b = checkBox9b.isChecked();
+
+        RadioButton checkbox9c = findViewById(R.id.checkbox_9_c);
+        boolean is9c = checkbox9c.isChecked();
+
+        RadioButton checkbox9d = findViewById(R.id.checkbox_9_d);
+        boolean is9d = checkbox9d.isChecked();
+
+        RadioButton checkbox9e = findViewById(R.id.checkbox_9_e);
+        boolean is9e = checkbox9e.isChecked();
+
+        if (!is9d) {
+            sumFalse += 1;
+        } else if (is9a || is9b || is9c || is9e) {
+            sumFalse += 1;
+        }
+
+        // ************ Question 10 ************* //
+        RadioButton checkbox10a = findViewById(R.id.babies_adults_radio_button);
+        boolean isTrue_10 = checkbox5a.isChecked();
+
+        RadioButton checkBox10b = findViewById(R.id.adults_babies_radio_button);
+        boolean isFalse_10 = checkBox5b.isChecked();
+
+        if (!isFalse_10 || isTrue_10) {
+            sumFalse += 1;
+        }
+
         //************* Calculate score ************//
 
         int startScore = 8;
@@ -184,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
 
     // ************ Check Answers ************* //
 
-    public void showAnswers (View view) {
+    public void showAnswers(View view) {
 
         ScrollView scrollToTop = findViewById(R.id.scrollView);
         scrollToTop.setScrollY(0);
@@ -212,6 +245,12 @@ public class MainActivity extends AppCompatActivity {
 
         TextView answer8TextView = findViewById(R.id.answer_8);
         answer8TextView.setText(R.string.fact_8);
+
+        TextView answer9TextView = findViewById(R.id.answer_9);
+        answer7TextView.setText(R.string.fact_9);
+
+        TextView answer10TextView = findViewById(R.id.answer_10);
+        answer8TextView.setText(R.string.fact_10);
 
     }
 

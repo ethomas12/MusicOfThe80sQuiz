@@ -451,56 +451,55 @@
                     style="@style/QuestionText"
                     android:text="@string/quiz_9" />
 
-                <TextView
-                    style="@style/PromptText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox_hint" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkbox_9_a"
-                    style="@style/ChoiceText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_9_a"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/checkbox_9_a"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/quiz_9_a"
+                        android:textAppearance="?android:textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/checkbox_9_b"
-                    style="@style/ChoiceText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_9_b"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/checkbox_9_b"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/quiz_9_b"
+                        android:textAppearance="?android:textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/checkbox_9_c"
-                    style="@style/ChoiceText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_9_c"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/checkbox_9_c"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/quiz_9_c"
+                        android:textAppearance="?android:textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/checkbox_9_d"
-                    style="@style/ChoiceText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_9_d"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/checkbox_9_d"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/quiz_9_d"
+                        android:textAppearance="?android:textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/checkbox_9_e"
-                    style="@style/ChoiceText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/quiz_9_e"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/checkbox_9_e"
+                        style="@style/ChoiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/quiz_9_e"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </RadioGroup>
 
                 <TextView
                     android:id="@+id/answer_9"
