@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">80s Music Quiz</string>
+    <string name="app_name">1980s Trivia</string>
+    <string name="app_title">80s Music Quiz</string>
 
     <string name="quizDescription">Test your knowledge of music made in the 1980s</string>
 
@@ -95,7 +96,7 @@
 
     <string name="fact_9">\"Rockit\" from his album \"Future Shock\"</string>
 
-    <string name="fact_10">False. She was the lead singer of the Sugarcubes </string>
+    <string name="fact_10">False. She was the lead singer of the Sugarcubes. </string>
 
 
     <!--Other text-->
@@ -108,16 +109,29 @@
     <string name="btn_text_1">Score</string>
     <string name="showAnswers">See Answers</string>
 
+    <!--Image descriptions-->
+    <string name="q1_img">Bauhaus</string>
+
+    <string name="q2_img">A DJ scratching</string>
+
+    <string name="q3_img">Vintage 1950s</string>
+
+    <string name="q4_img">Caribbean island</string>
+
+    <string name="q5_img">Cowboy hats</string>
+
+    <string name="q6_img">Record store</string>
+
+    <string name="q7_img">Street sign</string>
+
+    <string name="q8_img">Sad boy</string>
+
+    <string name="q9_img">Herbie Hancock</string>
+
+    <string name="q10_img">Sugarcubes</string>
 
 </resources>
 
 
-    <!--Image descriptions-->
-    <!--<string name="na_img">North America</string>-->
 
-    <!--<string name="au_img">Australia</string>-->
-
-    <!--<string name="eu_img">Europe</string>-->
-
-    <!--<string name="an_img">Antarctica</string>-->
 

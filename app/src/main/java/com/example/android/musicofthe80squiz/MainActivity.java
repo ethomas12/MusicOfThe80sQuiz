@@ -4,22 +4,40 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View.OnClickListener;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnClickListener {
     int sumFalse = 0;
+    boolean clicked = false;
 
 
     @Override
+
+
+    public void onClick(View v) {
+        //change boolean value
+        clicked = true;
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button isCheckBtn4Clicked = findViewById(R.id.check_4_button);
+        isCheckBtn4Clicked.setOnClickListener(this);
+
+
+        Button isCheckBtn8Clicked = findViewById(R.id.check_8_button);
+        isCheckBtn8Clicked.setOnClickListener(this);
     }
+
 
     public void checkBtn4(View v) {
 
@@ -29,15 +47,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (your_answer_4.equalsIgnoreCase("love on the run")) {
+            //Make the toast a variable so we can make changes to it
             //happy toast!
-            Toast.makeText(getApplicationContext(), "That is correct!",
-                    Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.show();
 
         } else {
             sumFalse += 1;
             //whoops toast
-            Toast.makeText(getApplicationContext(), "Uh, not quite..",
-                    Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(this, "Uh, not quite..", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.show();
         }
 
     }
@@ -50,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (your_answer_8.equalsIgnoreCase("my name is Luka")) {
-            //Make the toast a variable so we can make changes to it
             //happy toast!
             Toast toast = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
@@ -125,6 +145,11 @@ public class MainActivity extends AppCompatActivity {
             sumFalse += 1;
         }
 
+        // ************ Question 4 ************* //
+//        if (clicked) {
+//            sumFalse += 1;
+//        }
+
         // ************ Question 5 ************* //
         RadioButton checkbox5a = findViewById(R.id.babies_adults_radio_button);
         boolean isTrue_5 = checkbox5a.isChecked();
@@ -193,11 +218,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // ************ Question 10 ************* //
-        RadioButton checkbox10a = findViewById(R.id.babies_adults_radio_button);
-        boolean isTrue_10 = checkbox5a.isChecked();
+        RadioButton checkbox10a = findViewById(R.id.radio_button_10a);
+        boolean isTrue_10 = checkbox10a.isChecked();
 
-        RadioButton checkBox10b = findViewById(R.id.adults_babies_radio_button);
-        boolean isFalse_10 = checkBox5b.isChecked();
+        RadioButton checkBox10b = findViewById(R.id.radio_button_10b);
+        boolean isFalse_10 = checkBox10b.isChecked();
 
         if (!isFalse_10 || isTrue_10) {
             sumFalse += 1;
@@ -205,12 +230,13 @@ public class MainActivity extends AppCompatActivity {
 
         //************* Calculate score ************//
 
-        int startScore = 8;
+        int startScore = 10;
 
         int finalScore = startScore - sumFalse;
 
-        TextView quantityTextView = findViewById(R.id.final_score_message);
-        quantityTextView.setText("You got " + finalScore + " out of " + startScore + " correct!");
+        Toast toast = Toast.makeText(this, "You got " + finalScore + " out of " + startScore + " correct!", Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.show();
 
         return finalScore;
     }
@@ -247,10 +273,10 @@ public class MainActivity extends AppCompatActivity {
         answer8TextView.setText(R.string.fact_8);
 
         TextView answer9TextView = findViewById(R.id.answer_9);
-        answer7TextView.setText(R.string.fact_9);
+        answer9TextView.setText(R.string.fact_9);
 
         TextView answer10TextView = findViewById(R.id.answer_10);
-        answer8TextView.setText(R.string.fact_10);
+        answer10TextView.setText(R.string.fact_10);
 
     }
 
