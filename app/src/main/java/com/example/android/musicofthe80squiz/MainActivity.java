@@ -4,90 +4,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.View.OnClickListener;
 
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+public class MainActivity extends AppCompatActivity {
     int sumFalse = 0;
-    boolean clicked = false;
-
 
     @Override
-
-
-    public void onClick(View v) {
-        //change boolean value
-        clicked = true;
-    }
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button isCheckBtn4Clicked = findViewById(R.id.check_4_button);
-        isCheckBtn4Clicked.setOnClickListener(this);
-
-
-        Button isCheckBtn8Clicked = findViewById(R.id.check_8_button);
-        isCheckBtn8Clicked.setOnClickListener(this);
     }
 
 
-    public void checkBtn4(View v) {
-
-        // ************ Question 4 ************* //
-        TextView typed_answer_4 = findViewById(R.id.quiz_4_editable);
-        String your_answer_4 = typed_answer_4.getText().toString();
-
-
-        if (your_answer_4.equalsIgnoreCase("love on the run")) {
-            //Make the toast a variable so we can make changes to it
-            //happy toast!
-            Toast toast = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-            toast.show();
-
-        } else {
-            sumFalse += 1;
-            //whoops toast
-            Toast toast = Toast.makeText(this, "Uh, not quite..", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-            toast.show();
-        }
-
-    }
-
-    public void checkBtn8(View v) {
-
-        // ************ Question 8 ************* //
-        TextView typed_answer_8 = findViewById(R.id.quiz_8_editable);
-        String your_answer_8 = typed_answer_8.getText().toString();
-
-
-        if (your_answer_8.equalsIgnoreCase("my name is Luka")) {
-            //happy toast!
-            Toast toast = Toast.makeText(this, "That is correct!", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-            toast.show();
-
-        } else {
-            sumFalse += 1;
-            //whoops toast
-            Toast toast = Toast.makeText(this, "Uh, not quite..", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-            toast.show();
-        }
-
-    }
-
-
-    public int submitScore(View view) {
+    public int submitScore (View view) {
 
         // ************ Question 1 ************* //
         CheckBox checkbox1a = findViewById(R.id.checkbox_1_a);
@@ -146,9 +80,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         }
 
         // ************ Question 4 ************* //
-//        if (clicked) {
-//            sumFalse += 1;
-//        }
+        TextView typed_answer_4 = findViewById(R.id.quiz_4_editable);
+        String your_answer_4 = typed_answer_4.getText().toString();
+
+
+        if (!your_answer_4.equalsIgnoreCase("love on the run")) {
+            sumFalse += 1;
+        }
 
         // ************ Question 5 ************* //
         RadioButton checkbox5a = findViewById(R.id.babies_adults_radio_button);
@@ -192,6 +130,15 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
 
         if (isTrue_7 | !isFalse_7) {
+            sumFalse += 1;
+        }
+
+        // ************ Question 8 ************* //
+        TextView typed_answer_8 = findViewById(R.id.quiz_8_editable);
+        String your_answer_8 = typed_answer_8.getText().toString();
+
+
+        if (!your_answer_8.equalsIgnoreCase("my name is Luka")) {
             sumFalse += 1;
         }
 
