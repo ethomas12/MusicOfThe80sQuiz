@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public int submitScore (View view) {
+    public int submitScore(View view) {
 
         // ************ Question 1 ************* //
         CheckBox checkbox1a = findViewById(R.id.checkbox_1_a);
@@ -129,6 +129,17 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, "You got " + finalScore + " out of 10 correct!", Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
+
+        if (finalScore > 8) {
+
+            Toast toast2 = Toast.makeText(this, "Totally tubular!", Toast.LENGTH_SHORT);
+            toast2.setGravity(Gravity.CENTER_VERTICAL, 0, 160);
+            toast2.show();
+        } else {
+            Toast toast4 = Toast.makeText(this, "Rad", Toast.LENGTH_SHORT);
+            toast4.setGravity(Gravity.CENTER_VERTICAL, 0, 160);
+            toast4.show();
+        }
 
         ScrollView scrollToTop = findViewById(R.id.scrollView);
         scrollToTop.setScrollY(0);
