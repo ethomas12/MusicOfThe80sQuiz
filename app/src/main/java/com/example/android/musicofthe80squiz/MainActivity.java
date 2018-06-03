@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    int sumFalse = 0;
+    int sumTrue = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,56 +27,33 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox1a = findViewById(R.id.checkbox_1_a);
         boolean is1a = checkbox1a.isChecked();
 
-        CheckBox checkBox1b = findViewById(R.id.checkbox_1_b);
-        boolean is1b = checkBox1b.isChecked();
-
         CheckBox checkbox1c = findViewById(R.id.checkbox_1_c);
         boolean is1c = checkbox1c.isChecked();
 
-        CheckBox checkbox1d = findViewById(R.id.checkbox_1_d);
-        boolean is1d = checkbox1d.isChecked();
-
-        CheckBox checkbox1e = findViewById(R.id.checkbox_1_e);
-        boolean is1e = checkbox1e.isChecked();
-
-        if (!is1a | !is1c) {
-            sumFalse += 1;
-        } else if (is1b || is1d || is1e) {
-            sumFalse += 1;
+        if (is1a && is1c) {
+            sumTrue++;
         }
 
         // ************ Question 2 ************* //
         RadioButton checkbox2a = findViewById(R.id.true_radio_button);
         boolean isTrue_2 = checkbox2a.isChecked();
 
-        RadioButton checkBox2b = findViewById(R.id.false_radio_button);
-        boolean isFalse_2 = checkBox2b.isChecked();
-
-
-        if (!isTrue_2 | isFalse_2) {
-            sumFalse += 1;
+        if (isTrue_2) {
+            sumTrue++;
         }
 
         // ************ Question 3 ************* //
         CheckBox checkbox3a = findViewById(R.id.checkbox_3_a);
         boolean is3a = checkbox3a.isChecked();
 
-        CheckBox checkBox3b = findViewById(R.id.checkbox_3_b);
-        boolean is3b = checkBox3b.isChecked();
-
         CheckBox checkbox3c = findViewById(R.id.checkbox_3_c);
         boolean is3c = checkbox3c.isChecked();
-
-        CheckBox checkbox3d = findViewById(R.id.checkbox_3_d);
-        boolean is3d = checkbox3d.isChecked();
 
         CheckBox checkbox3e = findViewById(R.id.checkbox_3_e);
         boolean is3e = checkbox3e.isChecked();
 
-        if (!is3a | !is3c | !is3e) {
-            sumFalse += 1;
-        } else if (is3b || is3d) {
-            sumFalse += 1;
+        if (is3a && is3c && is3e) {
+            sumTrue++;
         }
 
         // ************ Question 4 ************* //
@@ -84,30 +61,21 @@ public class MainActivity extends AppCompatActivity {
         String your_answer_4 = typed_answer_4.getText().toString();
 
 
-        if (!your_answer_4.equalsIgnoreCase("love on the run")) {
-            sumFalse += 1;
+        if (your_answer_4.equalsIgnoreCase("love on the run")) {
+            sumTrue++;
         }
 
         // ************ Question 5 ************* //
-        RadioButton checkbox5a = findViewById(R.id.babies_adults_radio_button);
-        boolean isTrue_5 = checkbox5a.isChecked();
-
-        RadioButton checkBox5b = findViewById(R.id.adults_babies_radio_button);
+        RadioButton checkBox5b = findViewById(R.id.ba_radio);
         boolean isFalse_5 = checkBox5b.isChecked();
 
-        if (isFalse_5 || !isTrue_5) {
-            sumFalse += 1;
+        if (isFalse_5) {
+            sumTrue++;
         }
 
         // ************ Question 6 ************* //
-        CheckBox checkbox6a = findViewById(R.id.checkbox_6_a);
-        boolean is6a = checkbox6a.isChecked();
-
         CheckBox checkBox6b = findViewById(R.id.checkbox_6_b);
         boolean is6b = checkBox6b.isChecked();
-
-        CheckBox checkbox6c = findViewById(R.id.checkbox_6_c);
-        boolean is6c = checkbox6c.isChecked();
 
         CheckBox checkbox6d = findViewById(R.id.checkbox_6_d);
         boolean is6d = checkbox6d.isChecked();
@@ -115,22 +83,16 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox6e = findViewById(R.id.checkbox_6_e);
         boolean is6e = checkbox6e.isChecked();
 
-        if (!is6b | !is6d | !is6e) {
-            sumFalse += 1;
-        } else if (is6a || is6c) {
-            sumFalse += 1;
+        if (is6b && is6d && is6e) {
+            sumTrue++;
         }
 
         // ************ Question 7 ************* //
-        RadioButton checkbox7a = findViewById(R.id.radio_button_7a);
-        boolean isTrue_7 = checkbox7a.isChecked();
-
         RadioButton checkBox7b = findViewById(R.id.radio_button_7b);
         boolean isFalse_7 = checkBox7b.isChecked();
 
-
-        if (isTrue_7 | !isFalse_7) {
-            sumFalse += 1;
+        if (isFalse_7) {
+            sumTrue++;
         }
 
         // ************ Question 8 ************* //
@@ -138,59 +100,35 @@ public class MainActivity extends AppCompatActivity {
         String your_answer_8 = typed_answer_8.getText().toString();
 
 
-        if (!your_answer_8.equalsIgnoreCase("my name is Luka")) {
-            sumFalse += 1;
+        if (your_answer_8.equalsIgnoreCase("my name is Luka")) {
+            sumTrue++;
         }
 
         // ************ Question 9 ************* //
-        RadioButton checkbox9a = findViewById(R.id.checkbox_9_a);
-        boolean is9a = checkbox9a.isChecked();
-
-        RadioButton checkBox9b = findViewById(R.id.checkbox_9_b);
-        boolean is9b = checkBox9b.isChecked();
-
-        RadioButton checkbox9c = findViewById(R.id.checkbox_9_c);
-        boolean is9c = checkbox9c.isChecked();
-
         RadioButton checkbox9d = findViewById(R.id.checkbox_9_d);
         boolean is9d = checkbox9d.isChecked();
 
-        RadioButton checkbox9e = findViewById(R.id.checkbox_9_e);
-        boolean is9e = checkbox9e.isChecked();
-
-        if (!is9d) {
-            sumFalse += 1;
-        } else if (is9a || is9b || is9c || is9e) {
-            sumFalse += 1;
+        if (is9d) {
+            sumTrue++;
         }
 
         // ************ Question 10 ************* //
-        RadioButton checkbox10a = findViewById(R.id.radio_button_10a);
-        boolean isTrue_10 = checkbox10a.isChecked();
-
         RadioButton checkBox10b = findViewById(R.id.radio_button_10b);
         boolean isFalse_10 = checkBox10b.isChecked();
 
-        if (!isFalse_10 || isTrue_10) {
-            sumFalse += 1;
+        if (isFalse_10) {
+            sumTrue++;
         }
 
         //************* Calculate score ************//
 
-        int startScore = 10;
+        int startScore = 0;
 
-        int finalScore = startScore - sumFalse;
+        int finalScore = startScore + sumTrue;
 
-        Toast toast = Toast.makeText(this, "You got " + finalScore + " out of " + startScore + " correct!", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "You got " + finalScore + " out of 10 correct!", Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
-
-        return finalScore;
-    }
-
-    // ************ Check Answers ************* //
-
-    public void showAnswers(View view) {
 
         ScrollView scrollToTop = findViewById(R.id.scrollView);
         scrollToTop.setScrollY(0);
@@ -225,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
         TextView answer10TextView = findViewById(R.id.answer_10);
         answer10TextView.setText(R.string.fact_10);
 
+        return sumTrue = 0;
     }
 
 }

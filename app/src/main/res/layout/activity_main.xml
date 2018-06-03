@@ -64,9 +64,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q1_img"
                         android:src="@drawable/bauhaus" />
 
@@ -76,10 +74,6 @@
 
                     <TextView
                         style="@style/PromptText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginStart="16dp"
                         android:text="@string/checkbox_hint" />
 
                     <CheckBox
@@ -123,9 +117,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q2_img"
                         android:src="@drawable/scratching" />
 
@@ -172,9 +164,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q3_img"
                         android:src="@drawable/vintage_1950s" />
 
@@ -184,10 +174,6 @@
 
                     <TextView
                         style="@style/PromptText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginStart="16dp"
                         android:text="@string/checkbox_hint" />
 
                     <CheckBox
@@ -233,9 +219,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q4_img"
                         android:src="@drawable/carribean" />
 
@@ -271,9 +255,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q5_img"
                         android:src="@drawable/cowboy_hats" />
 
@@ -289,13 +271,13 @@
                         android:orientation="vertical">
 
                         <RadioButton
-                            android:id="@+id/adults_babies_radio_button"
+                            android:id="@+id/ab_radio"
                             style="@style/CheckboxText"
                             android:text="@string/ab_choice"
                             android:textAppearance="?android:textAppearanceMedium" />
 
                         <RadioButton
-                            android:id="@+id/babies_adults_radio_button"
+                            android:id="@+id/ba_radio"
                             style="@style/CheckboxText"
                             android:text="@string/ba_choice"
                             android:textAppearance="?android:textAppearanceMedium" />
@@ -318,9 +300,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q6_img"
                         android:src="@drawable/records" />
 
@@ -330,8 +310,6 @@
 
                     <TextView
                         style="@style/PromptText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/checkbox_hint" />
 
                     <CheckBox
@@ -380,9 +358,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q7_img"
                         android:src="@drawable/men_working" />
 
@@ -428,9 +404,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q8_img"
                         android:src="@drawable/sad_boy" />
 
@@ -465,9 +439,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q9_img"
                         android:src="@drawable/herbie_hancock" />
 
@@ -526,9 +498,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
+                        style="@style/Images"
                         android:contentDescription="@string/q10_img"
                         android:src="@drawable/sugar_cube" />
 
@@ -566,55 +536,15 @@
                         android:text="" />
                 </LinearLayout>
 
-
                 <!--End of Quiz Questions-->
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <Button
                         android:id="@+id/submit_score_button"
                         style="@style/CheckButtons"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginStart="20dp"
                         android:backgroundTint="@color/colorAccent"
-                        android:gravity="center"
                         android:onClick="submitScore"
-                        android:padding="8dp"
                         android:text="@string/btn_text_1"
                         android:textColor="@color/questionText" />
-
-                    <Button
-                        style="@style/CheckButtons"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginRight="20dp"
-                        android:backgroundTint="@color/colorAccent"
-                        android:onClick="showAnswers"
-                        android:padding="8dp"
-                        android:text="@string/showAnswers"
-                        android:textColor="@color/questionText" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/final_score_message"
-                    style="@style/AnswerText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text=""
-                    android:textColor="@color/colorAccent"
-                    android:textSize="32sp" />
-
 
             </LinearLayout>
 
