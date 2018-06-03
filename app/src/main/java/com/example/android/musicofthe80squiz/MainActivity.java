@@ -27,10 +27,19 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox1a = findViewById(R.id.checkbox_1_a);
         boolean is1a = checkbox1a.isChecked();
 
+        CheckBox checkbox1b = findViewById(R.id.checkbox_1_b);
+        boolean is1b = checkbox1b.isChecked();
+
         CheckBox checkbox1c = findViewById(R.id.checkbox_1_c);
         boolean is1c = checkbox1c.isChecked();
 
-        if (is1a && is1c) {
+        CheckBox checkbox1d = findViewById(R.id.checkbox_1_d);
+        boolean is1d = checkbox1d.isChecked();
+
+        CheckBox checkbox1e = findViewById(R.id.checkbox_1_e);
+        boolean is1e = checkbox1e.isChecked();
+
+        if (is1a && !is1b && is1c && !is1d && !is1e) {
             sumTrue++;
         }
 
@@ -46,13 +55,19 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox3a = findViewById(R.id.checkbox_3_a);
         boolean is3a = checkbox3a.isChecked();
 
+        CheckBox checkbox3b = findViewById(R.id.checkbox_3_b);
+        boolean is3b = checkbox3b.isChecked();
+
         CheckBox checkbox3c = findViewById(R.id.checkbox_3_c);
         boolean is3c = checkbox3c.isChecked();
+
+        CheckBox checkbox3d = findViewById(R.id.checkbox_3_d);
+        boolean is3d = checkbox3d.isChecked();
 
         CheckBox checkbox3e = findViewById(R.id.checkbox_3_e);
         boolean is3e = checkbox3e.isChecked();
 
-        if (is3a && is3c && is3e) {
+        if (is3a && !is3b && is3c && !is3d && is3e) {
             sumTrue++;
         }
 
@@ -74,8 +89,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // ************ Question 6 ************* //
+        CheckBox checkbox6a = findViewById(R.id.checkbox_6_a);
+        boolean is6a = checkbox6a.isChecked();
+
         CheckBox checkBox6b = findViewById(R.id.checkbox_6_b);
         boolean is6b = checkBox6b.isChecked();
+
+        CheckBox checkbox6c = findViewById(R.id.checkbox_6_c);
+        boolean is6c = checkbox6c.isChecked();
 
         CheckBox checkbox6d = findViewById(R.id.checkbox_6_d);
         boolean is6d = checkbox6d.isChecked();
@@ -83,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox6e = findViewById(R.id.checkbox_6_e);
         boolean is6e = checkbox6e.isChecked();
 
-        if (is6b && is6d && is6e) {
+        if (!is6a && is6b && !is6c && is6d && is6e) {
             sumTrue++;
         }
 
